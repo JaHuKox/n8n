@@ -4130,7 +4130,7 @@ const un = {
   initialMessages: ["Cześć! 👋", "Jestem asystentem Hobot! W czym mogę Ci pomóc?"],
   i18n: {
     pl: {
-      title: "Hi there! 👋",
+      title: "Cześć! 👋",
       subtitle: "Zacznij Czat. Jesteśmy dostępni 24/7!",
       footer: "",
       getStarted: "Nowy Czat",
