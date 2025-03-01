@@ -1,0 +1,89 @@
+:root {
+  --chat--color-primary: #005cc5;
+  --chat--color-secondary: #f2f4f8;
+  --chat--color-white: #ffffff;
+  --chat--color-dark: #101330;
+  --chat--border-radius: 16px;
+  --chat--window--width: 400px;
+  --chat--window--height: 600px;
+  --chat--heading--font-size: 1.8em;
+}
+
+/* Stylowanie głównego okna czatu */
+.chat-window {
+  background: linear-gradient(180deg, #005cc5 50%, #ffffff 50%);
+  color: var(--chat--color-white);
+  border-radius: var(--chat--border-radius);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Efekt fali na dole */
+.chat-window::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgNDAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0wIDMxLjAwMDZDMjIuNjY3IDM3LjE2NjMgNDQuMTY3IDQxLjA0NjcgNjguIDQxLjA0NjdDOTEuODMzIDQxLjA0NjcgMTEyLjUgMzguMDUgMTM2IDM4LjVDMTYxLjUgMzkgMTg1LjMzMyA0NC4wMDY3IDIwOSAyOS41QzIzMi42NjcgMTUgMjU4LjMgNDIuNSAzMDAgMzkuNUMzNTEuNSA1NiAzODUuNSA5IDE0MCAxMUM4MCAxMi41IDQ1IDI0LjUgMCAzMS4wMDA2WiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=');
+  background-size: cover;
+  animation: wave-animation 3s infinite linear;
+}
+
+/* Animacja fali */
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Stylowanie nagłówka */
+.chat-header {
+  padding: 20px;
+  text-align: left;
+  font-size: var(--chat--heading--font-size);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Stylowanie treści wiadomości */
+.chat-body {
+  background: var(--chat--color-white);
+  padding: 20px;
+  color: var(--chat--color-dark);
+}
+
+/* Stylowanie tekstu wiadomości */
+.chat-message {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Stylowanie ikon */
+.chat-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Zamknięcie okna */
+.chat-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: var(--chat--color-white);
+}
