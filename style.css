@@ -8,9 +8,11 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     font-family: Arial, sans-serif;
-    display: block;
+    display: block !important;
+    visibility: visible !important;
     background: linear-gradient(to bottom, #0066DA 30%, white 30%);
     border: 1px solid #ccc;
+    z-index: 9999;
 }
 
 /* Przycisk aktywacji czatu */
