@@ -4127,10 +4127,10 @@ const un = {
   chatSessionKey: "sessionId",
   defaultLanguage: "pl",
   showWelcomeScreen: !1,
-  initialMessages: ["Cześć! 👋", "Jestem asystentem Hobot! W czym mogę Ci pomóc?"],
+  initialMessages: ["Jestem asystentem Hobot! W czym mogę Ci pomóc?"],
   i18n: {
     pl: {
-      title: "Hi there! 👋",
+      title: "Cześć! 👋",
       subtitle: "Zacznij Czat. Jesteśmy dostępni 24/7!",
       footer: "",
       getStarted: "Nowy Czat",
