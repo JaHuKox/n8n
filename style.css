@@ -3,16 +3,17 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 350px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: block !important;
     visibility: visible !important;
-    background: linear-gradient(to bottom, #0066DA 30%, white 30%);
-    border: 1px solid #ccc;
-    z-index: 9999;
+    background: linear-gradient(to bottom, #1E90FF 25%, white 25%);
+    border: 2px solid #ddd;
+    z-index: 10000;
 }
 
 /* Przycisk aktywacji czatu */
@@ -20,75 +21,78 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0066DA;
+    background-color: #FF4081;
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 12px 18px;
-    font-size: 18px;
+    padding: 15px 22px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s, transform 0.2s;
 }
 .chat-widget-toggle:hover {
-    background-color: #0050A0;
+    background-color: #E73370;
+    transform: scale(1.1);
 }
 
 /* Nagłówek czatu */
 .chat-widget-header {
     background: transparent;
     color: white;
-    padding: 15px;
-    font-size: 18px;
+    padding: 18px;
+    font-size: 20px;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 /* Ikony w nagłówku */
 .chat-widget-header .icons {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 .chat-widget-header .icons button {
     background: none;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, transform 0.2s;
 }
 .chat-widget-header .icons button:hover {
     opacity: 0.7;
+    transform: scale(1.2);
 }
 
 /* Treść wiadomości */
 .chat-widget-body {
     background-color: transparent;
-    padding: 20px;
-    font-size: 16px;
+    padding: 25px;
+    font-size: 17px;
     color: #333;
     text-align: left;
+    line-height: 1.5;
 }
 
 /* Stopka czatu */
 .chat-widget-footer {
     background-color: white;
-    border-top: 1px solid #ccc;
-    padding: 10px;
+    border-top: 2px solid #ddd;
+    padding: 12px;
     text-align: center;
 }
 
 .chat-widget-footer a {
     text-decoration: none;
-    color: #0066DA;
+    color: #1E90FF;
     font-weight: bold;
     transition: color 0.3s;
 }
 .chat-widget-footer a:hover {
-    color: #0050A0;
+    color: #005bb5;
 }
